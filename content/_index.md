@@ -7,16 +7,16 @@ data_bs_theme: "light"
 hide_css_inspector: true
 ---
 
-| Component                            | JS & CSS                       | <small>No JS</small>                 | <small>No CSS</small>                 |
-| ------------------------------------ | ------------------------------ | ------------------------------------ | ------------------------------------- |
-| Alerts - Classic Dark                | [View](alerts-classic-dark/)   | [View](alerts-classic-dark-no-js/)   | [View](alerts-classic-dark-no-css/)   |
-| Alerts - Classic Light               | [View](alerts-classic-light/)  | [View](alerts-classic-light-no-js/)  | [View](alerts-classic-light-no-css/)  |
-| Badges - Classic Dark                | [View](badges-classic-dark/)   | [View](badges-classic-dark-no-js/)   | [View](badges-classic-dark-no-css/)   |
-| Badges - Classic Light               | [View](badges-classic-light/)  | [View](badges-classic-light-no-js/)  | [View](badges-classic-light-no-css/)  |
-| Buttons - Classic Dark               | [View](buttons-classic-dark/)  | [View](buttons-classic-dark-no-js/)  | [View](buttons-classic-dark-no-css/)  |
-| Buttons - Classic Light              | [View](buttons-classic-light/) | [View](buttons-classic-light-no-js/) | [View](buttons-classic-light-no-css/) |
-| Modus Web Components v1 Kitchen Sink | [View](v1/)                    | [View](v1-no-js/)                    | [View](v1-no-css/)                    |
-| Modus Web Components v2 Kitchen Sink | [View](kitchen-sink-wc2/)      | [View](kitchen-sink-wc2-no-js/)      | [View](kitchen-sink-wc2-no-css/)      |
+| Component                            | Theme                                     |                                             | <small>No JS</small>             | <small>No CSS</small>                 |
+| ------------------------------------ | ----------------------------------------- | ------------------------------------------- | -------------------------------- | ------------------------------------- |
+| Alerts                               | [Classic Light](alerts-classic-light/)    | [Classic Dark](alerts-classic-light/)       | [Test](alerts-classic-no-js/)    | [Test](alerts-classic-dark-no-js/)    |
+| Badges                               | [Classic Light](badges-classic-light/)    | [Classic Dark](badges-classic-light/)       | [Test](badges-classic-no-js/)    | [Test](badges-classic-dark-no-js/)    |
+| Buttons                              | [Classic Light](buttons-classic-dark/)    | [Classic Dark](buttons-classic-dark-no-js/) | [Test](buttons-classic-no-js/)   | [Test](buttonss-classic-dark-no-js/)  |
+| Chips                                | [Classic Light](chips-classic-light/)     | [Classic Dark](chips-classic-light/)        | [Test](chips-classic-no-js/)     | [Test](chips-classic-dark-no-js/)     |
+| Dropdowns                            | [Classic Light](dropdowns-classic-light/) | [Classic Dark](dropdowns-classic-light/)    | [Test](dropdowns-classic-no-js/) | [Test](dropdowns-classic-dark-no-js/) |
+| Navbars                              | [Classic Light](navbars-classic-light/)   | [Classic Dark](navbars-classic-light/)      | [Test](navbars-classic-no-js/)   | [Test](navbars-classic-dark-no-js/)   |
+| Modus Web Components v1 Kitchen Sink | [Classic Light](v1/)                      | [Classic Dark](v1-no-js/)                   | [Test](v1-no-css/)               |
+| Modus Web Components v2 Kitchen Sink | [Classic Light](wc2-classic-light/)       | [Classic Dark](wc2-classic-dark/)           | [Test](wc2-no-css/)              |
 
 <style>
   table {
@@ -34,9 +34,16 @@ hide_css_inspector: true
   table th {
     background-color: rgba(128, 128, 128, 0.1);
   }
-  table td:nth-of-type(3),
-  table td:nth-of-type(4) {
-    opacity: 0.8;
+  table td:nth-of-type(4),
+  table td:nth-of-type(5) {
+    opacity: 0.6;
     font-size: 0.8rem;
+  }
+  a[href*="chips"],
+  a[href*="dropdowns"],
+  a[href*="navbars"] {
+    pointer-events: none;
+    opacity: 0.5;
+    filter: grayscale(100%);
   }
 </style>
