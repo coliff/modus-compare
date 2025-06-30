@@ -13,7 +13,7 @@
     {{- partial "_meta.html" . -}}
     {{- partial "_styles.html" . -}}
   </head>
-  <body {{ with .Page.Params.body_class }} class="{{- . -}}" {{ end }}>
+  <body {{ with .Page.Params.body_class }} class="{{- . -}}" {{ end }} data-body-id="{{- .Title | urlize | lower -}}">
     {{ if not .Params.disableNavbar }}
     {{- partial "nav.html" . -}}
     {{ end }}
