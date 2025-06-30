@@ -1,5 +1,5 @@
 ---
-title: "Modus Web Components v2 Kitchen Sink (No CSS)"
+title: "Modus Web Components v2 Kitchen Sink"
 description: ""
 html_class: "bg-white"
 body_class: "bg-white"
@@ -10,5 +10,5 @@ layout: "kitchen-sink-wc2"
 disableNavbar: true
 disableBootstrap: true
 hide_css_inspector: true
-disableCSS: true
+enablePreflight: true
 ---
