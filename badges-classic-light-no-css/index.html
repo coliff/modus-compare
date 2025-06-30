@@ -1,0 +1,143 @@
+<!doctype html><html lang="en" class="bg-white" data-theme="modus-classic-light" data-mode="light" data-bs-theme="light">
+<head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Badges - Classic Light (No CSS)</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22>🔎</text></svg>">
+<script src="https://cdn.jsdelivr.net/npm/@trimble-oss/moduswebcomponents@0.0.0-alpha.32/esm/modus-wc.js" type="module" fetchpriority="high"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/popover-css-inspector@1.0.0-beta16/js/popover-css-inspector.min.js" defer></script>
+<link rel="stylesheet" href="/modus-compare/css/styles.css">
+</head>
+<body data-body-id="badges-classic-light-no-css">
+<nav class="navbar navbar-expand-lg navbar-main bg-secondary bg-opacity-75 sticky-top fixed-top mb-5" style="backdrop-filter:blur(10px)" id="nav">
+<div class="container">
+<a class="navbar-brand text-decoration-none" href="/modus-compare/">Modus Compare <small class="opacity-50 text-muted small fs-6"></small></a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle disabled" href="#" id="navbarDropdownContent" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+Content
+</a>
+<ul class="dropdown-menu" aria-labelledby="navbarDropdownContent">
+<li><a class="dropdown-item small" href="#typography">Typography</a></li>
+<li><a class="dropdown-item small" href="#images">Images</a></li>
+<li><a class="dropdown-item small" href="#tables">Tables</a></li>
+<li><a class="dropdown-item small" href="#figures">Figures</a></li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#components" id="navbarDropdownComponents" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+Components
+</a>
+<ul class="dropdown-menu" aria-labelledby="navbarDropdownComponents">
+<li><a class="dropdown-item small disabled" href="/modus-compare/accordion-classic-light/">Accordion</a></li>
+<li><a class="dropdown-item small" href="/modus-compare/alerts-classic-light/">Alerts</a></li>
+<li><a class="dropdown-item small" href="/modus-compare/badges-classic-light/">Badges</a></li>
+<li><a class="dropdown-item small" href="/modus-compare/buttons-classic-light/">Buttons</a></li>
+<li><a class="dropdown-item small disabled" href="/modus-compare/cards-classic-light/">Cards</a></li>
+<li><a class="dropdown-item small disabled" href="/modus-compare/dropdowns-classic-light/">Dropdowns</a></li>
+<li><a class="dropdown-item small disabled" href="/modus-compare/forms-classic-light/">Forms</a></li>
+<li><a class="dropdown-item small disabled" href="/modus-compare/modals-classic-light/">Modals</a></li>
+<li><a class="dropdown-item small disabled" href="/modus-compare/navs-classic-light/">Navs</a></li>
+<li><a class="dropdown-item small disabled" href="/modus-compare/pagination-classic-light/">Pagination</a></li>
+<li><a class="dropdown-item small disabled" href="/modus-compare/progress-classic-light/">Progress</a></li>
+<li><a class="dropdown-item small disabled" href="/modus-compare/spinners-classic-light/">Spinners</a></li>
+<li><a class="dropdown-item small disabled" href="/modus-compare/tables-classic-light/">Tables</a></li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle disabled" href="#forms" id="navbarDropdownForms" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+Forms
+</a>
+<ul class="dropdown-menu" aria-labelledby="navbarDropdownForms">
+<li><a class="dropdown-item small" href="#checks">Checks & Radios</a></li>
+<li><a class="dropdown-item small" href="#switches">Switches</a></li>
+<li><a class="dropdown-item small" href="#select">Select</a></li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#kitchen-sink" id="navbarDropdownKitchenSink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+Kitchen Sink
+</a>
+<ul class="dropdown-menu" aria-labelledby="navbarDropdownKitchenSink">
+<li><a class="dropdown-item" href="/modus-compare/v1/">Modus Web Components v1</a></li>
+<li><a class="dropdown-item" href="/modus-compare/v2/">Modus Web Components v2</a></li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link" href="https://github.com/coliff/modus-compare/">GitHub</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<main class="mb-5 p-4 container-xxl">
+<h2 id="badges" class="h1 fw-bold">Badges</h2>
+<table class="w-100 table table-bordered mt-3" style="width:100%">
+<tr>
+<td style="width:50%"><div class="d-flex flex-row gap-3 my-5 py-5">
+<div class="badge bg-primary">Primary
+</div>
+</div>
+</td>
+<td style="width:50%"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-badge color="primary" size="md" variant="filled">Primary
+</modus-wc-badge>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width:50%"><div class="d-flex flex-row gap-3 my-5 py-5">
+<div class="badge bg-secondary">Secondary
+</div>
+</div>
+</td>
+<td style="width:50%"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-badge color="secondary" size="md" variant="filled">Secondary
+</modus-wc-badge>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width:50%"><div class="d-flex flex-row gap-3 my-5 py-5">
+<div class="badge bg-danger">Danger
+</div>
+</div>
+</td>
+<td style="width:50%"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-badge color="danger" size="md" variant="filled">Danger
+</modus-wc-badge>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width:50%"><div class="d-flex flex-row gap-3 my-5 py-5">
+<div class="badge bg-success">Success
+</div>
+</div>
+</td>
+<td style="width:50%"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-badge color="success" size="md" variant="filled">Success
+</modus-wc-badge>
+</div>
+</td>
+</tr>
+<tr>
+<td style="width:50%"><div class="d-flex flex-row gap-3 my-5 py-5">
+<div class="badge bg-warning">Warning
+</div>
+</div>
+</td>
+<td style="width:50%"><div class="d-flex flex-row gap-3 my-5 py-5">
+<modus-wc-badge color="warning" size="md" variant="filled">Warning
+</modus-wc-badge>
+</div>
+</td>
+</tr>
+</table>
+</main><script src="/js/popover.js" defer fetchpriority="low"></script>
+</body>
+</html>
