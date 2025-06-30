@@ -1,0 +1,5 @@
+<div class="d-flex flex-row gap-3 my-5 py-5">
+  <div class="badge bg-{{- with .type -}}{{- . }}{{ end }} {{- with .size -}}{{- . }}{{ end }} {{- with .variant -}}{{- . }}{{ end }}">
+    {{- with .type -}}{{- . | title }}{{ end }}
+  </div>
+</div>

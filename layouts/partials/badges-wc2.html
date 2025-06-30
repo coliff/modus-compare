@@ -1,0 +1,5 @@
+<div class="d-flex flex-row gap-3 my-5 py-5">
+  <modus-wc-badge color="{{- with .type -}}{{- . }}{{ end }}" size="{{- with .size -}}{{- . }}{{else}}md{{ end }}" variant="{{- with .variant -}}{{- . }}{{else}}filled{{ end }}">
+  {{- with .type -}}{{- . | title }}{{ end }}
+</modus-wc-badge>
+</div>

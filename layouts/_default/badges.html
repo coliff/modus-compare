@@ -1,0 +1,31 @@
+{{- define "main" -}}
+
+<main class="mb-5 p-4 container-xxl">
+  <h2 id="badges" class="h1 fw-bold">Badges</h2>
+
+  <table class="w-100 table table-bordered mt-3" style="width: 100%; ">
+    <tr>
+      <td style="width: 50%;">{{- partial "badges-mb2" (dict "context" . "type" "primary" "label" "Primary") -}}</td>
+      <td style="width: 50%;">{{- partial "badges-wc2" (dict "context" . "type" "primary" "label" "Primary") -}}</td>
+    </tr>
+        <tr>
+      <td style="width: 50%;">{{- partial "badges-mb2" (dict "context" . "type" "secondary" "label" "Secondary") -}}</td>
+      <td style="width: 50%;">{{- partial "badges-wc2" (dict "context" . "type" "secondary" "label" "Secondary") -}}</td>
+    </tr>
+    <tr>
+      <td style="width: 50%;">{{- partial "badges-mb2" (dict "context" . "type" "danger" "label" "Danger") -}}</td>
+      <td style="width: 50%;">{{- partial "badges-wc2" (dict "context" . "type" "danger" "label" "Danger") -}}</td>
+    </tr>
+    <tr>
+      <td style="width: 50%;">{{- partial "badges-mb2" (dict "context" . "type" "success" "label" "Success") -}}</td>
+      <td style="width: 50%;">{{- partial "badges-wc2" (dict "context" . "type" "success" "label" "Success") -}}</td>
+    </tr>
+    <tr>
+      <td style="width: 50%;">{{- partial "badges-mb2" (dict "context" . "type" "warning" "label" "Warning") -}}</td>
+      <td style="width: 50%;">{{- partial "badges-wc2" (dict "context" . "type" "warning" "label" "Warning") -}}</td>
+    </tr>
+  </table>
+
+</main>
+
+{{- end -}}
